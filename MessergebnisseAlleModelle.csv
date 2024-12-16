@@ -1,0 +1,124 @@
+,,Gesamtertrag,Sharpe Ratio,,,,,,
+"Trainingsdaten:
+Start: 2018-12-31 23:00:00
+Ende: 2023-08-08 02:00:00 
+Länge: 40264 Stunden (1677.7 Tage)",,,,,,,,,
+"Testdaten:
+Start: 2023-08-08 03:00:00
+Ende: 2024-09-30 13:00:00
+Länge: 10067 Stunden (419.5 Tage)",,,,,,,,,
+10000€ Startkapital,,,,,,,,,
+Alle Reinforcment 30 episodes trainiert,Random Forest,34200,1.10,,,,,,
+Datensatz 20%,Random Forest Improved,34283,1.11,,,,,,
+,LSTM,-34666.35,-1.12,,,,,,
+,Lopez de Prado LSTM,-34121,-1.10,,,,,,
+,PPO-LSTM,28633,0.92,,,,,,
+,PPO-LSTM Improved,-63048,-0.20,,,,,,
+,"PPO-LSTM 2 Long, Short",-34666,-1.12,,,,,,
+,Zufallsstrategie ,28800,"0,93",,,,,,
+,Buy and Hold,11861,1.12,,,,,,
+,,,,,,,,,
+mit PPO LSTM 300 episoden trainiert,PPO-LSTM,13149,,,,,,,
+,PPO-LSTM Improved,75,,,,,,,
+,"PPO-LSTM 2 Long, Short",-34666,,,,,,,
+,,,,,,,,,
+,,,,"Durschnittlicher Gewinn abzüglich der 10000 Startkapital nach 2 läufen
+Random Forest:
+Durchschnittlicher Gewinn/Verlust: 32783.79
+Durchschnittliche Sharpe Ratio: 1.18
+Durchschnittlicher Max Drawdown: 23773.35
+
+Random Forest Improved:
+Durchschnittlicher Gewinn/Verlust: 32773.04
+Durchschnittliche Sharpe Ratio: 1.18
+Durchschnittlicher Max Drawdown: 23773.35
+
+LSTM:
+Durchschnittlicher Gewinn/Verlust: -53048.79
+Durchschnittliche Sharpe Ratio: -1.18
+Durchschnittlicher Max Drawdown: 48653.84
+
+López de Prado LSTM:
+Durchschnittlicher Gewinn/Verlust: -52783.79
+Durchschnittliche Sharpe Ratio: -1.18
+Durchschnittlicher Max Drawdown: 48653.84
+
+PPO-LSTM:
+Durchschnittlicher Gewinn/Verlust: 33219.21
+Durchschnittliche Sharpe Ratio: 1.19
+Durchschnittlicher Max Drawdown: 38691.14
+
+PPO-LSTM Imp2:
+Durchschnittlicher Gewinn/Verlust: 15777.18
+Durchschnittliche Sharpe Ratio: 0.71
+Durchschnittlicher Max Drawdown: 36213.59
+
+PPO-LSTM Improved:
+Durchschnittlicher Gewinn/Verlust: 8227.99
+Durchschnittliche Sharpe Ratio: 0.50
+Durchschnittlicher Max Drawdown: 30347.55
+
+Standard Strategie:
+Durchschnittlicher Gewinn/Verlust: -59378.45
+Durchschnittliche Sharpe Ratio: -1.36
+Durchschnittlicher Max Drawdown: 58389.10
+
+Zufallsstrategie:
+Durchschnittlicher Gewinn/Verlust: 10526.36
+Durchschnittliche Sharpe Ratio: 0.56
+Durchschnittlicher Max Drawdown: 38132.88
+
+Buy and Hold:
+Durchschnittlicher Gewinn/Verlust: 6253.90
+Durchschnittliche Sharpe Ratio: 1.18
+Durchschnittlicher Max Drawdown: 8976.09",,,,,"Durschnittlicher Gewinn abzüglich der 10000 Startkapital nach 10 läufen
+
+Random Forest:
+Durchschnittlicher Gewinn/Verlust: 32783.79
+Durchschnittliche Sharpe Ratio: 1.18
+Durchschnittlicher Max Drawdown: 23773.35
+
+Random Forest Improved:
+Durchschnittlicher Gewinn/Verlust: 32773.04
+Durchschnittliche Sharpe Ratio: 1.18
+Durchschnittlicher Max Drawdown: 23773.35
+
+LSTM:
+Durchschnittlicher Gewinn/Verlust: -53048.79
+Durchschnittliche Sharpe Ratio: -1.18
+Durchschnittlicher Max Drawdown: 48653.84
+
+López de Prado LSTM:
+Durchschnittlicher Gewinn/Verlust: -52783.79
+Durchschnittliche Sharpe Ratio: -1.18
+Durchschnittlicher Max Drawdown: 48653.84
+
+PPO-LSTM:
+Durchschnittlicher Gewinn/Verlust: 33219.21
+Durchschnittliche Sharpe Ratio: 1.19
+Durchschnittlicher Max Drawdown: 38691.14
+
+PPO-LSTM Imp2:
+Durchschnittlicher Gewinn/Verlust: 6588.39
+Durchschnittliche Sharpe Ratio: 0.46
+Durchschnittlicher Max Drawdown: 38642.85
+
+PPO-LSTM Improved:
+Durchschnittlicher Gewinn/Verlust: -39251.27
+Durchschnittliche Sharpe Ratio: -0.80
+Durchschnittlicher Max Drawdown: 50203.26
+
+Standard Strategie:
+Durchschnittlicher Gewinn/Verlust: -59378.45
+Durchschnittliche Sharpe Ratio: -1.36
+Durchschnittlicher Max Drawdown: 58389.10
+
+Zufallsstrategie:
+Durchschnittlicher Gewinn/Verlust: 174.08
+Durchschnittliche Sharpe Ratio: 0.28
+Durchschnittlicher Max Drawdown: 29517.07
+
+Buy and Hold:
+Durchschnittlicher Gewinn/Verlust: 6253.90
+Durchschnittliche Sharpe Ratio: 1.18
+Durchschnittlicher Max Drawdown: 8976.09"

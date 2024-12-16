@@ -1,0 +1,2471 @@
+,,Sharpe Ratio,Total Value Strategie,Gewinn Gesamt,Total Return Strategie,,Number of Trades,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Trainingsdaten:
+Start: 2018-12-31 23:00:00
+Ende: 2023-08-08 02:00:00
+Länge: 40264 Stunden (1677.7 Tage)",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Testdaten:
+Start: 2023-08-08 03:00:00
+Ende: 2024-09-30 13:00:00
+Länge: 10067 Stunden (419.5 Tage)",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+10000€ Startkapital,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Vergleich Reinforcment learning:,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Test 1 (mit 20% Test),PPO LSTM basis,"0,3331",18644,8644,"0,8645",,7145,,,,,,,,,,,,,,,,,,,,,
+10000€ Startkapital,PPO LSTM 2 Long Short,"-0,0305",9623,,"-0,0377",,5253,,,,,,,,,,,,,,,,,,,,,
+,"PPO LSTM 3 Long, Short, 3 zu1, 1% ","0,1867",13966,3966,"0,3966",,5326,,,,,,,,,,,,,,,,,,,,,
+,Random,"0,1858",15000,5000,"0,5",,6711,,,,,,,,,,,,,,,,,,,,,
+,Buy and Hold,,21595,11595,"1,16",,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mittel nach 100 durchläufen,PPO LSTM basis,"0,1902",14464,4464,"0,446",,,,,,,,,,,,,,,,,,,,,,,
+,PPO LSTM 2 Long Short,"0,06",10535,,"0,053",,,,,,,,,,,,,,,,,,,,,,,
+,"PPO LSTM 3 Long, Short, 3 zu1, 1% ","0,096",12013,2013,"0,2014",,,,,,,,,,,,,,,,,,,,,,,
+,Random,"0,1858",15000,5000,"0,5",,,,,,,,,,,,,,,,,,,,,,,
+,Buy and Hold,,21595,,"1,16",,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mittel nach 100 durchläufen,PPO LSTM basis,"0,14",12495,,"0,25",,,,,,,,,,,,,,,,,,,,,,,
+,PPO LSTM 2 Long Short,"0,04",10280,,"0,028",,,,,,,,,,,,,,,,,,,,,,,
+PPo lstm 3 300 episodes trainiert,"PPO LSTM 3 Long, Short, 3 zu1, 1% ","0,16",13879,3879,"0,3879",,,,,,,,,,,,,,,,,,,,,,,
+,Random,"0,21",15673,,"0,56",,,,,,,,,,,,,,,,,,,,,,,
+,Buy and Hold,,21595,11595,"1,16",,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Trainingsdaten:
+Start: 2000-03-01 00:00:00
+Ende: 2019-11-21 00:00:00
+Länge: 7205 Datenpunkte/Tage)
+
+Testdaten:
+Start: 2019-11-22 00:00:00
+Ende: 2024-10-27 00:00:00
+Länge: 1802 Datenpunkte/Tage)",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+10000€ Startkapital,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mittel nach 100 durchläufen,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"multi Data, PPO LSTM mit long und short",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+!!! anderer Zeitraum und BTC geht erst 2017 los !!! - Also nicht wirklich vergleichbar mit Ergebnisse von oben,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Jährliche durschnittliche Rendite von Buy and Hold,,,"74,33%",,,,"74,33%",,,"74,33%",,,,,"74,33%",,,,,,"74,33%",,,,"74,33%",,,
+Jährliche durschnittliche Rendite des Version 3 PPO-LSTM Multi Data,,,"5,59%",,,,"4,91%",,,"70,46%",,,,,"112,70%",,,,,,"66,20%",,,,50%,,,
+,"Teststatistiken nach 10 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 30.07%
+  Standardabweichung: 14.70%
+  Min: 16.83%
+  Max: 71.12%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%",,"Teststatistiken nach 10 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 27.58%
+  Standardabweichung: 9.30%
+  Min: 17.66%
+  Max: 48.72%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 4.41%
+  Standardabweichung: 62.20%
+  Min: -69.15%
+  Max: 149.05%",,,,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 24.25%
+  Standardabweichung: 1.82%
+  Min: 16.36%
+  Max: 28.48%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 10.69%
+  Standardabweichung: 61.20%
+  Min: -182.10%
+  Max: 221.90%",,,"Teststatistiken nach 100 Durchläufen optimierte Reward Funktion, Long/Short
+AI Model:
+  Durchschnittliche Rendite: 347.88%
+  Standardabweichung: 201.65%
+  Min: -21.17%
+  Max: 864.49%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 2.22%
+  Standardabweichung: 58.01%
+  Min: -132.73%
+  Max: 175.62%",,,,,"Teststatistiken nach 100 Durchläufen verbesserter reward und verbesserte hyper parameter:
+AI Model:
+  Durchschnittliche Rendite: 556.66%
+  Standardabweichung: 243.19%
+  Min: -77.03%
+  Max: 847.58%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 2.46%
+  Standardabweichung: 55.25%
+  Min: -181.24%
+  Max: 130.24%
+
+Gesamtanzahl der Aktionen über alle Tests:
+
+Crypto_BTCUSDT:
+  Hold: 83047 (75.7%)
+  Long: 23369 (21.3%)
+  Short: 3302 (3.0%)
+  Gesamt: 109718
+
+Stock_AAPL:
+  Hold: 17455 (75.2%)
+  Long: 5102 (22.0%)
+  Short: 661 (2.8%)
+  Gesamt: 23218
+
+Commodity_Crude_Oil_WTI:
+  Hold: 3788 (75.7%)
+  Long: 1058 (21.1%)
+  Short: 159 (3.2%)
+  Gesamt: 5005
+",,,,,,"Optuna Hyperparameter optimierung optuna_params = {
+    'features_dim': 384,  # Kleiner - könnte effizienter sein
+    'pi': [336, 317, 211],  # Asymmetrische Architektur
+    'vf': [511, 259, 121],  # Asymmetrische Architektur
+    'learning_rate': 0.000205,  # Langsamer
+    'n_steps': 1024,  # Kürzere Sequenzen
+    'batch_size': 1088,  # Ähnlich
+    'n_epochs': 23,  # Mehr Epochen
+    'gamma': 0.9514,  # Weniger Zukunftsfokus
+    'gae_lambda': 0.9538,  # Ähnlich
+    'clip_range': 0.2213,  # Mehr Flexibilität
+    'ent_coef': 0.0363  # Mehr Exploration
+}
+
+Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 327.35%
+  Standardabweichung: 250.24%
+  Min: -98.37%
+  Max: 835.62%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 9.47%
+  Standardabweichung: 56.60%
+  Min: -176.27%
+  Max: 177.00%
+
+",,,,"
+Teststatistiken nach 100 Durchläufen, 500 episoden training :
+AI Model:
+  Durchschnittliche Rendite: 247.14%
+  Standardabweichung: 210.54%
+  Min: -36.98%
+  Max: 815.97%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 8.21%
+  Standardabweichung: 50.33%
+  Min: -109.63%
+  Max: 160.78%
+
+Gesamtanzahl der Aktionen über alle Tests:
+
+Crypto_BTCUSDT:
+  Hold: 34552 (92.8%)
+  Long: 2538 (6.8%)
+  Short: 142 (0.4%)
+  Gesamt: 37232
+
+Stock_AAPL:
+  Hold: 55278 (92.1%)
+  Long: 4627 (7.7%)
+  Short: 120 (0.2%)
+  Gesamt: 60025
+
+Commodity_Crude_Oil_WTI:
+  Hold: 69132 (92.6%)
+  Long: 5369 (7.2%)
+  Short: 150 (0.2%)
+  Gesamt: 74651",,,
+,,,,,,,,,,Modell verbessert sich nicht stetig,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,Wenig Shorts,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,Reward eventuell verbessern,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Jährliche durschnittliche Rendite von Buy and Hold,"74,33%",,"74,33%",,,,,,,,,,,,,,,,,,,,,,,,,
+Jährliche durschnittliche Rendite des Version 4 PPO-LSTM Multi Data,"128,21%",,131%,,,,,,,,,,,,,,,,,,,,,,,,,
+"   reward = 0
+
+        if not done: 
+            # 1. Hauptkomponente: Relative Performance mit asymmetrischer Bestrafun
+            returns = (self.net_worth - previous_net_worth) / previous_net_worth
+            if returns > 0:
+                reward += returns * 10  # Positive Returns
+            else:
+                reward -= abs(returns) * 10  # Bestrafung für Verluste
+
+            # 2. Drawdown-Bestrafung (verschärft)
+            max_drawdown = (self.max_net_worth - self.net_worth) / self.max_net_worth
+            if max_drawdown > 0.10:  # 10% Drawdown
+                reward -= max_drawdown * 40  # Stärkere Bestrafung für Drawdowns
+
+            # 3. Neue High-Water-Mark Bonus
+            high = (self.net_worth - self.max_net_worth) / self.max_net_worth
+            if self.net_worth > self.max_net_worth:
+                reward += high * 20  # Bonus für neue Höchststände
+                self.max_net_worth = self.net_worth
+
+            # 4. Trading Frequency Optimization
+            if action_type != 0:  # Wenn nicht ""Halten""
+                reward -= 1 # Kleine Bestrafung für zu häufiges Handeln
+            
+        
+        else: 
+            # 5. Absolute/total Return Performance-Komponente
+            absolute_return = (self.net_worth - self.initial_balance) / self.initial_balance
+            
+            if absolute_return > 0:
+                reward += absolute_return * 1000  # Belohne absolute Performance
+            else:
+                reward -= abs(absolute_return) * 100000 # Bestrafe","Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 633.70%
+  Standardabweichung: 205.35%
+  Min: -14.68%
+  Max: 866.09%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 7.93%
+  Standardabweichung: 59.42%
+  Min: -169.94%
+  Max: 192.05%
+
+Gesamtanzahl der Aktionen über alle Tests:
+
+Crypto_BTCUSDT:
+  Hold: 127546 (88.2%)
+  Long: 16788 (11.6%)
+  Short: 233 (0.2%)
+  Gesamt: 144567
+
+Stock_AAPL:
+  Hold: 19615 (89.0%)
+  Long: 2321 (10.5%)
+  Short: 108 (0.5%)
+  Gesamt: 22044
+
+Commodity_Crude_Oil_WTI:
+  Hold: 3163 (87.7%)
+  Long: 400 (11.1%)
+  Short: 42 (1.2%)
+  Gesamt: 3605",,"Teststatistiken nach 100 Durchläufen und 1000 episoden training:
+AI Model:
+  Durchschnittliche Rendite: 646.97%
+  Standardabweichung: 193.91%
+  Min: -16.57%
+  Max: 846.22%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 11.30%
+  Standardabweichung: 55.78%
+  Min: -164.61%
+  Max: 162.95%
+
+Gesamtanzahl der Aktionen über alle Tests:
+
+Crypto_BTCUSDT:
+  Hold: 134414 (89.4%)
+  Long: 15622 (10.4%)
+  Short: 333 (0.2%)
+  Gesamt: 150369
+
+Stock_AAPL:
+  Hold: 16003 (89.5%)
+  Long: 1798 (10.1%)
+  Short: 80 (0.4%)
+  Gesamt: 17881
+
+Commodity_Crude_Oil_WTI:
+  Hold: 2235 (88.2%)
+  Long: 258 (10.2%)
+  Short: 42 (1.7%)
+  Gesamt: 2535",,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Jährliche durschnittliche Rendite des Version 6 PPO-LSTM Multi Data ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+lookback window in tagen,lookback window 10/ 50 episoden training,,,lookback window 50/ 50 episoden training,,,,lookback window 100/50 episoden training,,,lookback window 300/50 episoden training,,,,,,,,,,,,,,,,,
+verbessrete step berechnung für long und short mit average entry,"Alt Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 352.54%
+  Standardabweichung: 299.68%
+  Min: -662.26%
+  Max: 814.23%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 7.05%
+  Standardabweichung: 58.10%
+  Min: -188.37%
+  Max: 198.45%","NeuTeststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 351.27%
+  Standardabweichung: 246.18%
+  Min: -467.68%
+  Max: 814.95%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 549.82%
+  Standardabweichung: 198.20%
+  Min: 251.10%
+  Max: 862.58%",,"Neu Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 348.69%
+  Standardabweichung: 300.66%
+  Min: -623.34%
+  Max: 830.47%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 553.04%
+  Standardabweichung: 213.69%
+  Min: 248.53%
+  Max: 861.88%",,"Alt Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 308.76%
+  Standardabweichung: 315.07%
+  Min: -1030.31%
+  Max: 931.83%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 4.25%
+  Standardabweichung: 54.85%
+  Min: -117.59%
+  Max: 173.63%
+
+",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 311.40%
+  Standardabweichung: 288.65%
+  Min: -937.98%
+  Max: 786.37%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 4.63%
+  Standardabweichung: 58.75%
+  Min: -201.87%
+  Max: 150.26%",,,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 283.78%
+  Standardabweichung: 247.33%
+  Min: -513.66%
+  Max: 827.05%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 6.85%
+  Standardabweichung: 70.25%
+  Min: -154.88%
+  Max: 350.68%",,,,,,,,,,,,,,,,,
+einfache reward funktion mit reward = net worth,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+lookback window das model statt nur einen aktuellen close wert,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+mehrer historische und den aktuellen bekommt,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Reward Funktion Ai4Fincance ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,lookback window 50/ 50 episoden training,,verinfachter ai4 finance reward,,,,,,,,,,,,,,,,,,,,,,,,,
+,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: -170.17%
+  Standardabweichung: 318.65%
+  Min: -2913.48%
+  Max: 67.23%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: -0.87%
+  Standardabweichung: 55.89%
+  Min: -164.17%
+  Max: 239.17%",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 56.04%
+  Standardabweichung: 95.38%
+  Min: -164.94%
+  Max: 490.75%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 5.14%
+  Standardabweichung: 51.76%
+  Min: -124.35%
+  Max: 143.07%",,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ai4Finance Fremwork und eigener reward ,ohne Loockback window,,,Mit lookback window 30,,,,,,,,,,,,,,,,,,,,,,,,
+reward = (total_asset - self.total_asset) * self.reward_scale,"Initiales Investment: 10,000.00$
+Finale Portfolio Value: 96,659.21$
+Absoluter Gewinn/Verlust: 86,659.21$
+Cumulative Return: 966.59%
+Durchschnittlicher Reward: 0.0117
+
+Finales Portfolio:
+  Crypto_BTCUSDT:    1 Einheiten @ 67201.99$ = 67,201.99$
+  Stock_AAPL:   96 Einheiten @ 231.41$ = 22,215.36$
+  Commodity_Crude_Oil_WTI:  101 Einheiten @ 71.69$ = 7,240.69$
+Cash: 1.17$
+",,,"Initiales Investment: 10,000.00$
+Finale Portfolio Value: 35,216.73$
+Absoluter Gewinn/Verlust: 25,216.73$
+Cumulative Return: 352.17%
+Durchschnittlicher Reward: 0.0034
+
+
+Reward Entwicklung:
+  Min Reward: -0.3930
+  Max Reward: 0.5206
+  Durchschnitt: 0.0034
+  Standardabweichung: 0.0826
+
+Finales Portfolio:
+  Stock_AAPL:  152 Einheiten @ 231.41$ = 35,174.32$
+  Durchschnittlicher Einstandspreis: 65.44$
+Cash: 42.41$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 35,216.73
+Total Reward: 6.50
+Cumulative Return: 352.17%
+
+Modell Input Analyse:
+Anzahl Zeilen (Zeitschritte): 9007
+Anzahl Spalten (Features): 1126",,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ai4Finance Fremwork und reward aus Version 4 PPO LSTM und nicht Discret also werte zwische -1 und 1,*2 Episoden Training,,,,,10 Episoden Training,,,,,,10 Episoden,,,,,,,,,,,,,,,,
+,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 98,036.33$
+Absoluter Gewinn/Verlust: 88,036.33$
+Cumulative Return: 980.36%
+Durchschnittlicher Reward: -4.1024
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 1
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 1
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -28.8182
+  Max Reward: 8802.6442
+  Durchschnitt: -4.1024
+  Standardabweichung: 207.6991
+
+Finales Portfolio:
+  Crypto_BTCUSDT:    1 Einheiten @ 67201.99$ = 67,201.99$
+  Durchschnittlicher Einstandspreis: 7311.57$
+  Commodity_Crude_Oil_WTI:  430 Einheiten @ 71.69$ = 30,826.70$
+  Durchschnittlicher Einstandspreis: 28.19$
+Cash: 7.64$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 98,036.33
+Total Reward: -7798.65
+Cumulative Return: 980.36%",,,,,"Evaluate Model
+
+Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 39,862.43$
+Absoluter Gewinn/Verlust: 29,862.43$
+Cumulative Return: 398.62%
+Durchschnittlicher Reward: -7.4866
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 1
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -95.4777
+  Max Reward: 2968.4251
+  Durchschnitt: -7.4866
+  Standardabweichung: 70.5593
+
+Finales Portfolio:
+  Commodity_Crude_Oil_WTI:  556 Einheiten @ 71.69$ = 39,859.64$
+  Durchschnittlicher Einstandspreis: 35.11$
+Cash: 2.78$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 39,862.43
+Total Reward: -14232.00
+Cumulative Return: 398.62%",,,,,,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 76,689.89$
+Absoluter Gewinn/Verlust: 66,689.89$
+Cumulative Return: 766.90%
+Durchschnittlicher Reward: -8.4027
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 1
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 1
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 0
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -30.5156
+  Max Reward: 6668.0030
+  Durchschnitt: -8.4027
+  Standardabweichung: 157.6572
+
+Finales Portfolio:
+  Crypto_BTCUSDT:    1 Einheiten @ 67201.99$ = 67,201.99$
+  Durchschnittlicher Einstandspreis: 7311.57$
+  Stock_AAPL:   41 Einheiten @ 231.41$ = 9,487.81$
+  Durchschnittlicher Einstandspreis: 65.33$
+Cash: 0.09$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 76,689.89
+Total Reward: -15973.47
+Cumulative Return: 766.90%",,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ai4Finance Fremwork und reward aus Version 4 PPO LSTM /nicht Discret also werte zwische -1 und 1/ reduced feature set,,1100 Episoden,,,,*200 Episoden,,,,,,200 episoden/ 20 Tage History,,,,,,,1000 episoden /20 Tage History,,,,,,,2000 episoden /20 Tage History,,
+,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 35,216.73$
+Absoluter Gewinn/Verlust: 25,216.73$
+Cumulative Return: 352.17%
+Durchschnittlicher Reward: 0.0034
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 1
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 0
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -0.3930
+  Max Reward: 0.5206
+  Durchschnitt: 0.0034
+  Standardabweichung: 0.0826
+
+Finales Portfolio:
+  Stock_AAPL:  152 Einheiten @ 231.41$ = 35,174.32$
+  Durchschnittlicher Einstandspreis: 65.44$
+Cash: 42.41$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 35,216.73
+Total Reward: 6.50
+Cumulative Return: 352.17%",,,,,"Evaluate Model
+
+Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 98,036.33$
+Absoluter Gewinn/Verlust: 88,036.33$
+Cumulative Return: 980.36%
+Durchschnittlicher Reward: -4.1024
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 1
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 5
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -28.8182
+  Max Reward: 8802.6442
+  Durchschnitt: -4.1024
+  Standardabweichung: 207.6991
+
+Finales Portfolio:
+  Crypto_BTCUSDT:    1 Einheiten @ 67201.99$ = 67,201.99$
+  Durchschnittlicher Einstandspreis: 7311.57$
+  Commodity_Crude_Oil_WTI:  430 Einheiten @ 71.69$ = 30,826.70$
+  Durchschnittlicher Einstandspreis: 28.19$
+Cash: 7.64$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 98,036.33
+Total Reward: -7798.65
+Cumulative Return: 980.36%",,,,,,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 76,689.89$
+Absoluter Gewinn/Verlust: 66,689.89$
+Cumulative Return: 766.90%
+Durchschnittlicher Reward: -8.4027
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 1
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 2
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 0
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -30.5156
+  Max Reward: 6668.0030
+  Durchschnitt: -8.4027
+  Standardabweichung: 157.6572
+
+Finales Portfolio:
+  Crypto_BTCUSDT:    1 Einheiten @ 67201.99$ = 67,201.99$
+  Durchschnittlicher Einstandspreis: 7311.57$
+  Stock_AAPL:   41 Einheiten @ 231.41$ = 9,487.81$
+  Durchschnittlicher Einstandspreis: 65.33$
+Cash: 0.09$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 76,689.89
+Total Reward: -15973.47
+Cumulative Return: 766.90%",,,,,,,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 34,707.60$
+Absoluter Gewinn/Verlust: 24,707.60$
+Cumulative Return: 347.08%
+Durchschnittlicher Reward: -2.1506
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 2
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 2
+  Short Trades: 2
+
+Reward Entwicklung:
+  Min Reward: -13.8895
+  Max Reward: 2469.7598
+  Durchschnitt: -2.1506
+  Standardabweichung: 58.3679
+
+Finales Portfolio:
+  Stock_AAPL:  150 Einheiten @ 231.41$ = 34,711.50$
+  Durchschnittlicher Einstandspreis: 66.88$
+Cash: -3.90$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 34,707.60
+Total Reward: -4088.25
+Cumulative Return: 347.08%",,,,,,,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 69,883.11$
+Absoluter Gewinn/Verlust: 59,883.11$
+Cumulative Return: 698.83%
+Durchschnittlicher Reward: -9.5316
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 1
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 0
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -31.6368
+  Max Reward: 5987.3265
+  Durchschnitt: -9.5316
+  Standardabweichung: 141.7065
+
+Finales Portfolio:
+  Crypto_BTCUSDT:    1 Einheiten @ 67201.99$ = 67,201.99$
+  Durchschnittlicher Einstandspreis: 7311.57$
+Cash: 2,681.12$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 69,883.11
+Total Reward: -18119.58
+Cumulative Return: 698.83%",,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ai4Finance Fremwork und basiic reward new value - old... /nicht Discret also werte zwische -1 und 1/ reduced feature set,,*200 episoden/ ohne lookback,,,,,2000 episoden/ ohne lookback,,,,,,,400 episoden/ ohne lookback,,,,,,,300 episoden/30 lookback,,,,,,,2000 episoden/30 lookback
+,,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 96,659.21$
+Absoluter Gewinn/Verlust: 86,659.21$
+Cumulative Return: 966.59%
+Durchschnittlicher Reward: 0.0117
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 1
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 2
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 1
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -1.7723
+  Max Reward: 1.8815
+  Durchschnitt: 0.0117
+  Standardabweichung: 0.3231
+
+Finales Portfolio:
+  Crypto_BTCUSDT:    1 Einheiten @ 67201.99$ = 67,201.99$
+  Durchschnittlicher Einstandspreis: 7311.57$
+  Stock_AAPL:   96 Einheiten @ 231.41$ = 22,215.36$
+  Durchschnittlicher Einstandspreis: 66.41$
+  Commodity_Crude_Oil_WTI:  101 Einheiten @ 71.69$ = 7,240.69$
+  Durchschnittlicher Einstandspreis: 57.77$
+Cash: 1.17$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 96,659.21
+Total Reward: 22.33
+Cumulative Return: 966.59%",,,,,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 69,883.11$
+Absoluter Gewinn/Verlust: 59,883.11$
+Cumulative Return: 698.83%
+Durchschnittlicher Reward: 0.0081
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 1
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 0
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -1.7184
+  Max Reward: 1.8504
+  Durchschnitt: 0.0081
+  Standardabweichung: 0.3041
+
+Finales Portfolio:
+  Crypto_BTCUSDT:    1 Einheiten @ 67201.99$ = 67,201.99$
+  Durchschnittlicher Einstandspreis: 7311.57$
+Cash: 2,681.12$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 69,883.11
+Total Reward: 15.43
+Cumulative Return: 698.83%",,,,,,,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 35,216.73$
+Absoluter Gewinn/Verlust: 25,216.73$
+Cumulative Return: 352.17%
+Durchschnittlicher Reward: 0.0034
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 2
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 0
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -0.3930
+  Max Reward: 0.5206
+  Durchschnitt: 0.0034
+  Standardabweichung: 0.0826
+
+Finales Portfolio:
+  Stock_AAPL:  152 Einheiten @ 231.41$ = 35,174.32$
+  Durchschnittlicher Einstandspreis: 65.44$
+Cash: 42.41$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 35,216.73
+Total Reward: 6.50
+Cumulative Return: 352.17%",,,,,,,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 88,873.27$
+Absoluter Gewinn/Verlust: 78,873.27$
+Cumulative Return: 888.73%
+Durchschnittlicher Reward: 0.0107
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 1
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 1
+  Short Trades: 1
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 4
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -2.0328
+  Max Reward: 1.9330
+  Durchschnitt: 0.0107
+  Standardabweichung: 0.3311
+
+Finales Portfolio:
+  Crypto_BTCUSDT:    1 Einheiten @ 67201.99$ = 67,201.99$
+  Durchschnittlicher Einstandspreis: 7311.57$
+  Commodity_Crude_Oil_WTI:  302 Einheiten @ 71.69$ = 21,650.38$
+  Durchschnittlicher Einstandspreis: 52.07$
+Cash: 20.90$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 88,873.27
+Total Reward: 20.33
+Cumulative Return: 888.73%",,,,,,,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 10,038.77$
+Absoluter Gewinn/Verlust: 38.77$
+Cumulative Return: 100.39%
+Durchschnittlicher Reward: 0.0000
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 2
+  Short Trades: 2
+
+Reward Entwicklung:
+  Min Reward: -0.0141
+  Max Reward: 0.0169
+  Durchschnitt: 0.0000
+  Standardabweichung: 0.0006
+
+Finales Portfolio:
+Cash: 10,038.77$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 10,038.77
+Total Reward: 0.01
+Cumulative Return: 100.39%"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Implementation 4 - 9 mit feature reduktion,100 episoden / ohne lookback,,500 episoden / ohne lookback,,,,,,,,,,,,,,,,,,,,,,,,,
+,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 638.97%
+  Standardabweichung: 223.34%
+  Min: -25.64%
+  Max: 949.46%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: -2.10%
+  Standardabweichung: 53.08%
+  Min: -183.32%
+  Max: 148.41%
+
+Gesamtanzahl der Aktionen über alle Tests:
+
+Crypto_BTCUSDT:
+  Hold: 127998 (88.9%)
+  Long: 15644 (10.9%)
+  Short: 281 (0.2%)
+  Gesamt: 143923
+
+Stock_AAPL:
+  Hold: 20259 (89.4%)
+  Long: 2302 (10.2%)
+  Short: 108 (0.5%)
+  Gesamt: 22669
+
+Commodity_Crude_Oil_WTI:
+  Hold: 3315 (87.7%)
+  Long: 416 (11.0%)
+  Short: 47 (1.2%)
+  Gesamt: 3778",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 610.66%
+  Standardabweichung: 222.68%
+  Min: -84.16%
+  Max: 1038.54%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 12.60%
+  Standardabweichung: 51.45%
+  Min: -101.70%
+  Max: 159.22%
+
+Gesamtanzahl der Aktionen über alle Tests:
+
+Crypto_BTCUSDT:
+  Hold: 128094 (88.9%)
+  Long: 15704 (10.9%)
+  Short: 354 (0.2%)
+  Gesamt: 144152
+
+Stock_AAPL:
+  Hold: 19591 (88.4%)
+  Long: 2466 (11.1%)
+  Short: 103 (0.5%)
+  Gesamt: 22160
+
+Commodity_Crude_Oil_WTI:
+  Hold: 3216 (89.2%)
+  Long: 347 (9.6%)
+  Short: 43 (1.2%)
+  Gesamt: 3606",,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Implementation 6 - 10 averag entry/ mit feature reduktion,50 episoden trainiert/ lookback = 1,100 episoden trainiert/ lookback = 1,,200 episoden trainiert/ lookback = 1,,*400 episoden trainiert/ lookback = 1,,800 episoden trainiert/ lookback = 1,,,400 episoden trainiert/ lookback = 10,,,,,,,,,,,,,,,,,
+"    policy_kwargs = dict(
+        features_extractor_class=LSTMFeatureExtractor,
+        features_extractor_kwargs=dict(features_dim=256),
+        net_arch=dict(
+            pi=[128, 64],  # Reduzierte Architektur
+            vf=[128, 64]
+        )
+    )","Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 605.36%
+  Standardabweichung: 241.60%
+  Min: -503.21%
+  Max: 994.48%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 3.49%
+  Standardabweichung: 56.79%
+  Min: -172.41%
+  Max: 198.45%
+","Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 609.60%
+  Standardabweichung: 241.79%
+  Min: -306.14%
+  Max: 1007.10%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 7.28%
+  Standardabweichung: 55.04%
+  Min: -130.83%
+  Max: 161.23%",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 635.79%
+  Standardabweichung: 213.09%
+  Min: -68.48%
+  Max: 1054.77%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 3.88%
+  Standardabweichung: 54.43%
+  Min: -191.14%
+  Max: 133.96%",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 561.19%
+  Standardabweichung: 212.95%
+  Min: 58.58%
+  Max: 914.51%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 4.37%
+  Standardabweichung: 61.91%
+  Min: -145.90%
+  Max: 231.31%",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 547.65%
+  Standardabweichung: 278.97%
+  Min: -844.09%
+  Max: 909.90%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: 7.47%
+  Standardabweichung: 54.39%
+  Min: -188.75%
+  Max: 151.03%",,,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 80.99%
+  Standardabweichung: 258.68%
+  Min: -640.88%
+  Max: 1642.56%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 366.93%
+  Standardabweichung: 0.00%
+  Min: 366.93%
+  Max: 366.93%
+
+Random Strategy:
+  Durchschnittliche Rendite: -3.78%
+  Standardabweichung: 53.69%
+  Min: -160.48%
+  Max: 141.28%",,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Autogluon,training 1 min,training 10min ,,training 1h,,,,,,,,,,,,,,,,,,,,,,,,
+,"
+Initial Portfolio Value: €10,000.00
+Final Portfolio Value: €10,237.54
+Total Return: 2.38%
+Annualized Return: 1.15%","
+Initial Portfolio Value: €10,000.00
+Final Portfolio Value: €9,266.59
+Total Return: -7.33%
+Annualized Return: -3.55%G81",,"
+Initial Portfolio Value: €10,000.00
+Final Portfolio Value: €9,000.93
+Total Return: -9.99%
+Annualized Return: -4.84%",,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ab hier gut vergleichbar !!!,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+lopez de Prado/ universal btc timeframe  same features,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Training: Trainingsdaten:
+Start: 2017-09-01 00:00:00
+Ende: 2023-05-23 00:00:00 Test: Start: 2023-05-24 00:00:00
+Ende: 2024-10-27 00:00:00","Portfolio Performance:
+Startkapital: $10,000.00
+Endkapital: $22,006.48
+Gesamtrendite: 120.06%","Lopez de Prado( ML-Strategie):
+Startkapital: $10,000.00
+Endkapital: $22,006.48
+Gesamtrendite: 120.06%
+
+DCA-Strategie Performance (BTC):
+Startkapital: $10,000.00
+Endkapital: $16,178.66
+Gesamtrendite: 61.79%
+
+Zufallsstrategie Performance (BTC):
+Startkapital: $10,000.00
+Endkapital: $8,488.05
+Gesamtrendite: -15.12%
+
+s und p 500  Buy & Hold Performance:
+Startkapital: $10,000.00
+Endkapital: $13,972.55
+Gesamtrendite: 39.73%
+
+BTC Buy & Hold Rendite: 155.24%",,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Autogluon/ universal btc timeframe  same features,1min training,*2min training,,10min training,,20min training,,,,,,,,,,,,,,,,,,,,,,
+,"Initial Portfolio Value: €10,000.00
+Final Portfolio Value: €10,600.78
+Total Return: 6.01%
+Annualized Return: 2.93%","Initial Portfolio Value: €10,000.00
+Final Portfolio Value: €10,806.20
+Total Return: 8.06%
+Annualized Return: 3.93%",,"Initial Portfolio Value: €10,000.00
+Final Portfolio Value: €10,727.00
+Total Return: 7.27%
+Annualized Return: 3.54%",,"Initial Portfolio Value: €10,000.00
+Final Portfolio Value: €10,415.89
+Total Return: 4.16%
+Annualized Return: 2.03%",,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Reinforcment Learning,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Only Btc, PPoLstm 10/ only universal btc timeframe same features",*100 episoden/no lookback/ ent_coef 0.01,200 episoden/no lookcback,,400 episoden/no lookcback,,800 episoden/no lookcback,,50 episoden/no lookback,,,75 episoden/no lookback,,,,,,,,,,,,,,,,,
+"Training: Trainingsdaten:
+Start: 2017-09-01 00:00:00
+Ende: 2023-05-23 00:00:00 2091 Tage Test: Start: 2023-05-24 00:00:00
+Ende: 2024-10-27 00:00:00  523 Tage","Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 131.15%
+  Standardabweichung: 21.12%
+  Min: 51.57%
+  Max: 158.93%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 154.82%
+  Standardabweichung: 0.00%
+  Min: 154.82%
+  Max: 154.82%
+
+Random Strategy:
+  Durchschnittliche Rendite: 16.85%
+  Standardabweichung: 21.77%
+  Min: -45.10%
+  Max: 65.85%","Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 131.22%
+  Standardabweichung: 30.37%
+  Min: -45.53%
+  Max: 166.88%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 154.82%
+  Standardabweichung: 0.00%
+  Min: 154.82%
+  Max: 154.82%
+
+Random Strategy:
+  Durchschnittliche Rendite: 13.17%
+  Standardabweichung: 25.54%
+  Min: -85.54%
+  Max: 87.68%",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 122.94%
+  Standardabweichung: 44.19%
+  Min: -195.59%
+  Max: 161.89%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 154.82%
+  Standardabweichung: 0.00%
+  Min: 154.82%
+  Max: 154.82%
+
+Random Strategy:
+  Durchschnittliche Rendite: 9.02%
+  Standardabweichung: 23.06%
+  Min: -49.32%
+  Max: 62.22%",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 118.99%
+  Standardabweichung: 71.03%
+  Min: -348.51%
+  Max: 163.52%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 154.82%
+  Standardabweichung: 0.00%
+  Min: 154.82%
+  Max: 154.82%
+
+Random Strategy:
+  Durchschnittliche Rendite: 10.97%
+  Standardabweichung: 24.50%
+  Min: -66.57%
+  Max: 55.02%",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 133.80%
+  Standardabweichung: 25.43%
+  Min: -6.62%
+  Max: 161.14%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 154.82%
+  Standardabweichung: 0.00%
+  Min: 154.82%
+  Max: 154.82%
+
+Random Strategy:
+  Durchschnittliche Rendite: 10.04%
+  Standardabweichung: 25.80%
+  Min: -69.00%
+  Max: 51.41%",,,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 129.10%
+  Standardabweichung: 29.82%
+  Min: -54.57%
+  Max: 158.55%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 154.82%
+  Standardabweichung: 0.00%
+  Min: 154.82%
+  Max: 154.82%
+
+Random Strategy:
+  Durchschnittliche Rendite: 14.98%
+  Standardabweichung: 25.89%
+  Min: -57.97%
+  Max: 85.02%",,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"*mit Sentiment, PPoLstm 10/ only universal btc timeframe same features",1 episode,10 episoden,,*100 episoden,,200 episoden,,400 episoden,,,600 episode ,,,,,,,,,,,,,,,,,
+,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 129.69%
+  Standardabweichung: 27.10%
+  Min: -8.87%
+  Max: 176.33%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 154.82%
+  Standardabweichung: 0.00%
+  Min: 154.82%
+  Max: 154.82%
+
+Random Strategy:
+  Durchschnittliche Rendite: 11.44%
+  Standardabweichung: 22.91%
+  Min: -59.67%
+  Max: 85.83%
+
+","Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 126.41%
+  Standardabweichung: 32.60%
+  Min: -23.57%
+  Max: 160.81%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 154.82%
+  Standardabweichung: 0.00%
+  Min: 154.82%
+  Max: 154.82%
+
+Random Strategy:
+  Durchschnittliche Rendite: 13.06%
+  Standardabweichung: 26.74%
+  Min: -79.40%
+  Max: 67.23%",,"AI Model:
+  Durchschnittliche Rendite: 133.18%
+  Standardabweichung: 21.96%
+  Min: 32.09%
+  Max: 162.97%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 154.82%
+  Standardabweichung: 0.00%
+  Min: 154.82%
+  Max: 154.82%
+
+Random Strategy:
+  Durchschnittliche Rendite: 8.49%
+  Standardabweichung: 26.00%
+  Min: -69.49%
+  Max: 71.66%",,"AI Model:
+  Durchschnittliche Rendite: 129.81%
+  Standardabweichung: 35.52%
+  Min: -86.46%
+  Max: 166.95%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 154.82%
+  Standardabweichung: 0.00%
+  Min: 154.82%
+  Max: 154.82%
+
+Random Strategy:
+  Durchschnittliche Rendite: 11.31%
+  Standardabweichung: 22.32%
+  Min: -54.64%
+  Max: 57.59%",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 131.92%
+  Standardabweichung: 25.69%
+  Min: -39.44%
+  Max: 177.19%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 154.82%
+  Standardabweichung: 0.00%
+  Min: 154.82%
+  Max: 154.82%
+
+Random Strategy:
+  Durchschnittliche Rendite: 8.83%
+  Standardabweichung: 25.85%
+  Min: -68.87%
+  Max: 62.07%",,,"AI Model:
+  Durchschnittliche Rendite: 127.14%
+  Standardabweichung: 39.03%
+  Min: -115.01%
+  Max: 182.59%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 154.82%
+  Standardabweichung: 0.00%
+  Min: 154.82%
+  Max: 154.82%
+
+Random Strategy:
+  Durchschnittliche Rendite: 12.09%
+  Standardabweichung: 21.01%
+  Min: -57.52%
+  Max: 66.18%",,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"PpoLstm 10/ btc, oil and apple/ kein Sentiment",,,,,,200 epis,,400 epis,,,600 epis,,,,,,,,,,,,,,,,,
+"Trainingsdaten:
+Start: 2000-03-01 00:00:00
+Ende: 2023-05-24 00:00:00
+Länge: 8485 Datenpunkte/Tage)
+
+Testdaten:
+Start: 2023-05-24 00:00:00
+Ende: 2024-10-27 00:00:00
+Länge: 523 Datenpunkte/Tage)",,,,,,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 78.74%
+  Standardabweichung: 92.80%
+  Min: -337.62%
+  Max: 156.52%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 61.98%
+  Standardabweichung: 0.00%
+  Min: 61.98%
+  Max: 61.98%
+
+Random Strategy:
+  Durchschnittliche Rendite: 3.64%
+  Standardabweichung: 27.55%
+  Min: -65.64%
+  Max: 56.75%",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 99.71%
+  Standardabweichung: 51.15%
+  Min: -97.26%
+  Max: 159.68%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 61.98%
+  Standardabweichung: 0.00%
+  Min: 61.98%
+  Max: 61.98%
+
+Random Strategy:
+  Durchschnittliche Rendite: -0.43%
+  Standardabweichung: 31.32%
+  Min: -86.36%
+  Max: 80.21%",,,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: 72.00%
+  Standardabweichung: 70.28%
+  Min: -217.43%
+  Max: 158.33%
+
+Buy and Hold:
+  Durchschnittliche Rendite: 61.98%
+  Standardabweichung: 0.00%
+  Min: 61.98%
+  Max: 61.98%
+
+Random Strategy:
+  Durchschnittliche Rendite: 6.32%
+  Standardabweichung: 25.55%
+  Min: -82.98%
+  Max: 58.50%",,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"ownNewImpl.py Ai4Finance basic reward/ btc, oil and apple/ kein Sentiment",100 epis,,,,,200 epis,,,,,,400 epis,,,,,,,,,,,,,,,,
+"Trainingsdaten:
+Start: 2000-03-01 00:00:00
+Ende: 2023-05-24 00:00:00
+Länge: 8485 Datenpunkte/Tage)
+
+Testdaten:
+Start: 2023-05-24 00:00:00
+Ende: 2024-10-27 00:00:00
+Länge: 523 Datenpunkte/Tage)","Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 9,855.78$
+Absoluter Gewinn/Verlust: -144.22$
+Cumulative Return: 98.56%
+Durchschnittlicher Reward: -0.0001
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 2
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -0.1676
+  Max Reward: 0.1599
+  Durchschnitt: -0.0001
+  Standardabweichung: 0.0411
+
+Finales Portfolio:
+  Commodity_Crude_Oil_WTI:  137 Einheiten @ 71.69$ = 9,821.53$
+  Durchschnittlicher Einstandspreis: 72.67$
+Cash: 34.25$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 9,855.78
+Total Reward: -0.04
+Cumulative Return: 98.56%",,,,,"Initiales Investment: 10,000.00$
+Finale Portfolio Value: 13,180.86$
+Absoluter Gewinn/Verlust: 3,180.86$
+Cumulative Return: 131.81%
+Durchschnittlicher Reward: 0.0015
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 1
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 0
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -0.1474
+  Max Reward: 0.1952
+  Durchschnitt: 0.0015
+  Standardabweichung: 0.0307
+
+Finales Portfolio:
+  Stock_AAPL:   57 Einheiten @ 231.41$ = 13,190.37$
+  Durchschnittlicher Einstandspreis: 175.43$
+Cash: -9.51$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 13,180.86
+Total Reward: 0.93
+Cumulative Return: 131.81%",,,,,,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 9,855.78$
+Absoluter Gewinn/Verlust: -144.22$
+Cumulative Return: 98.56%
+Durchschnittlicher Reward: -0.0001
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 2
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -0.1676
+  Max Reward: 0.1599
+  Durchschnitt: -0.0001
+  Standardabweichung: 0.0411
+
+Finales Portfolio:
+  Commodity_Crude_Oil_WTI:  137 Einheiten @ 71.69$ = 9,821.53$
+  Durchschnittlicher Einstandspreis: 72.67$
+Cash: 34.25$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 9,855.78
+Total Reward: -0.04
+Cumulative Return: 98.56%",,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ownNewImpl.py Ai4Finance basic reward/ 10 Assets / kein Sentiment,100 epis,,,,,200 epis,,,,,,400 epis,,,,,,,600 epis ,,,,,,,1000 epis,,
+,"Initiales Investment: 10,000.00$
+Finale Portfolio Value: 13,180.86$
+Absoluter Gewinn/Verlust: 3,180.86$
+Cumulative Return: 131.81%
+Durchschnittlicher Reward: 0.0015
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 1
+  Short Trades: 0
+
+Stock_MSFT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_GOOGL:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AMZN:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_META:
+  Long Trades: 0
+  Short Trades: 0
+
+ETF_SPY:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Gold:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 0
+  Short Trades: 0
+
+Bond_iShares_Core_US_Aggregate:
+  Long Trades: 0
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -0.1474
+  Max Reward: 0.1952
+  Durchschnitt: 0.0015
+  Standardabweichung: 0.0307
+
+Finales Portfolio:
+  Stock_AAPL:   57 Einheiten @ 231.41$ = 13,190.37$
+  Durchschnittlicher Einstandspreis: 175.43$
+Cash: -9.51$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 13,180.86
+Total Reward: 0.93
+Cumulative Return: 131.81%",,,,,"Initiales Investment: 10,000.00$
+Finale Portfolio Value: 12,847.81$
+Absoluter Gewinn/Verlust: 2,847.81$
+Cumulative Return: 128.48%
+Durchschnittlicher Reward: 0.0013
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_MSFT:
+  Long Trades: 1
+  Short Trades: 0
+
+Stock_GOOGL:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AMZN:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_META:
+  Long Trades: 0
+  Short Trades: 0
+
+ETF_SPY:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Gold:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 0
+  Short Trades: 0
+
+Bond_iShares_Core_US_Aggregate:
+  Long Trades: 0
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -0.1168
+  Max Reward: 0.1008
+  Durchschnitt: 0.0013
+  Standardabweichung: 0.0294
+
+Finales Portfolio:
+  Stock_MSFT:   30 Einheiten @ 428.15$ = 12,844.50$
+  Durchschnittlicher Einstandspreis: 332.89$
+Cash: 3.31$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 12,847.81
+Total Reward: 0.83
+Cumulative Return: 128.48%",,,,,,"Training Episode beendet:
+Initiales Investment: 10,000.00$
+Finale Portfolio Value: 13,242.83$
+Absoluter Gewinn/Verlust: 3,242.83$
+Cumulative Return: 132.43%
+Durchschnittlicher Reward: 0.0015
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_MSFT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_GOOGL:
+  Long Trades: 1
+  Short Trades: 0
+
+Stock_AMZN:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_META:
+  Long Trades: 0
+  Short Trades: 0
+
+ETF_SPY:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Gold:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 0
+  Short Trades: 0
+
+Bond_iShares_Core_US_Aggregate:
+  Long Trades: 0
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -0.2578
+  Max Reward: 0.3115
+  Durchschnitt: 0.0015
+  Standardabweichung: 0.0402
+
+Finales Portfolio:
+  Stock_GOOGL:   80 Einheiten @ 165.27$ = 13,221.60$
+  Durchschnittlicher Einstandspreis: 124.61$
+Cash: 21.23$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 13,242.83
+Total Reward: 0.94
+Cumulative Return: 132.43%",,,,,,,"Initiales Investment: 10,000.00$
+Finale Portfolio Value: 13,619.91$
+Absoluter Gewinn/Verlust: 3,619.91$
+Cumulative Return: 136.20%
+Durchschnittlicher Reward: 0.0017
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_MSFT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_GOOGL:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AMZN:
+  Long Trades: 1
+  Short Trades: 1
+
+Stock_META:
+  Long Trades: 0
+  Short Trades: 0
+
+ETF_SPY:
+  Long Trades: 1
+  Short Trades: 0
+
+Commodity_Gold:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 2
+  Short Trades: 1
+
+Bond_iShares_Core_US_Aggregate:
+  Long Trades: 0
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -0.0877
+  Max Reward: 0.0683
+  Durchschnitt: 0.0017
+  Standardabweichung: 0.0176
+
+Finales Portfolio:
+  ETF_SPY:   23 Einheiten @ 579.04$ = 13,317.92$
+  Durchschnittlicher Einstandspreis: 420.02$
+  Commodity_Crude_Oil_WTI:    4 Einheiten @ 71.69$ = 286.76$
+  Durchschnittlicher Einstandspreis: 72.53$
+Cash: 15.23$
+
+================================================================================
+Test Performance:
+Final Portfolio Value: 13,619.91
+Total Reward: 1.05
+Cumulative Return: 136.20%",,,,,,,"Initiales Investment: 10,000.00$
+Finale Portfolio Value: 13,242.83$
+Absoluter Gewinn/Verlust: 3,242.83$
+Cumulative Return: 132.43%
+Durchschnittlicher Reward: 0.0015
+
+Handelsstatistiken:
+
+Crypto_BTCUSDT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_AAPL:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_MSFT:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_GOOGL:
+  Long Trades: 1
+  Short Trades: 0
+
+Stock_AMZN:
+  Long Trades: 0
+  Short Trades: 0
+
+Stock_META:
+  Long Trades: 0
+  Short Trades: 0
+
+ETF_SPY:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Gold:
+  Long Trades: 0
+  Short Trades: 0
+
+Commodity_Crude_Oil_WTI:
+  Long Trades: 0
+  Short Trades: 0
+
+Bond_iShares_Core_US_Aggregate:
+  Long Trades: 0
+  Short Trades: 0
+
+Reward Entwicklung:
+  Min Reward: -0.2578
+  Max Reward: 0.3115
+  Durchschnitt: 0.0015
+  Standardabweichung: 0.0402
+
+Finales Portfolio:
+  Stock_GOOGL:   80 Einheiten @ 165.27$ = 13,221.60$
+  Durchschnittlicher Einstandspreis: 124.61$
+Cash: 21.23$",,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Ai4Finanane, basic Reward, universal btc timeframe  same features (ai4FinanceBasicReward) mit 100k",1 episoden,10 episoden,,50 episoden,,100episoden,*200episoden,,400 episoden,,1000 episoden/100k Startguthaben,,,,,,,,,,,,,,,,,
+lookback 20,"Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%
+","Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%
+",,"Test-Zusammenfassung:
+Initiales Investment: $10,000.00
+Finales Portfolio: $9,773.43
+Gesamtrendite: -2.27%
+",,"Test-Zusammenfassung:
+Initiales Investment: $10,000.00
+Finales Portfolio: $25,138.70
+Gesamtrendite: 151.39%
+","Test-Zusammenfassung:
+Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%
+",,"Test-Zusammenfassung:
+Initiales Investment: $10,000.00
+Finales Portfolio: $25,138.70
+Gesamtrendite: 151.39%
+Anzahl der Trades: 0",,"Test-Zusammenfassung:
+Initiales Investment: $100,000.00
+Finales Portfolio: $102,652.13
+Gesamtrendite: 2.65%
+Anzahl der Trades: 522",,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Ai4Finanane, basic Reward, universal btc timeframe  same features (ai4FinanceBasicReward) mit 100k",,100 epis,,,,100epis,200 episoden,,400 episoden,,600 epis,,,,,,,,,,,,,,,,,
+lookback 1,,"Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%",,,,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%","Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%",,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%",,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%",,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"*mit Sentiment, Ai4Finanane, basic Reward, universal btc timeframe  same features (ai4FinanceBasicReward)",1 epi,10 epis,,,,*100 epis,200 episoden,,400 epis,,,,,,,,,,,,,,,,,,,
+lookback 1,"Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%
+Anzahl der Trades: 0","Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%",,,,"Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%","Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%",,"Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%",,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Ai4Finanane, 4Ppo Lstm Reward, universal btc timeframe  same features",1episode,10 episoden,,50 episoden,,100 episoden,*200 episoden,,400 episoden,,1000episoden,,,,,,,,,,,,,,,,,
+lookback 20,"Test-Zusammenfassung:
+Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%
+Anzahl der Trades: 522","Test-Zusammenfassung:
+Initiales Investment: $10,000.00
+Finales Portfolio: $9,781.98
+Gesamtrendite: -2.18%
+Anzahl der Trades: 522",,"Test-Zusammenfassung:
+Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%
+Anzahl der Trades: 522",,"Test-Zusammenfassung:
+Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%
+Anzahl der Trades: 522","Test-Zusammenfassung:
+Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%
+Anzahl der Trades: 522",,"Test-Zusammenfassung:
+Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%
+Anzahl der Trades: 522",,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Ai4Finanane, 4Ppo Lstm Reward, universal btc timeframe  same features",,10 epis,,,,100 epis ,200 episoden,,,,,,,,,,,,,,,,,,,,,
+lookback 1,,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%",,,,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%","Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%
+Anzahl der Trades: 522",,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"*mit Sentiment, Ai4Finanane, 4Ppo Lstm Reward, universal btc timeframe  same features",1episode,,,,,100 episoden,200 episoden,,*400 episoden,,500 episoden,,600 episoden,,,,,,,,,,,,,,,
+lookback 20,0,,,,,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%
+Anzahl der Trades: 522","Initiales Investment: $10,000.00
+Finales Portfolio: $23,399.11
+Gesamtrendite: 133.99%
+Anzahl der Trades: 522",,"Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%
+Anzahl der Trades: 522",,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,456.09
+Gesamtrendite: 4.56%
+Anzahl der Trades: 522",,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%
+Anzahl der Trades: 522",,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"*mit Sentiment, Ai4Finanane, 4Ppo Lstm Reward, universal btc timeframe  same features",,,,,,100 epis,200 epis,,400 epis,,,,,,,,,,,,,,,,,,,
+lookback 1,,,,,,"Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%
+Anzahl der Trades: 522","Initiales Investment: $10,000.00
+Finales Portfolio: $25,359.21
+Gesamtrendite: 153.59%
+Anzahl der Trades: 522",,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%",,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+New Risiko Timeframe ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+lopez de prado,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Trainingsdaten:
+Start: 2017-09-01 00:00:00
+Ende: 2021-11-10 00:00:00
+Länge: 1532 Datenpunkte
+
+Testdaten:
+Start: 2021-11-10 00:00:00
+Ende: 2022-11-23 00:00:00
+Länge: 379 Datenpunkte","Portfolio Performance (ML-Strategie):
+Startkapital: $10,000.00
+Endkapital: $2,533.36
+Gesamtrendite: -74.67%
+
+DCA-Strategie Performance (BTC):
+Startkapital: $10,000.00
+Endkapital: $5,589.94
+Gesamtrendite: -44.10%
+
+Zufallsstrategie Performance (BTC):
+Startkapital: $10,000.00
+Endkapital: $3,479.79
+Gesamtrendite: -65.20%
+
+MSCI World Buy & Hold Performance:
+Startkapital: $10,000.00
+Endkapital: $8,580.24
+Gesamtrendite: -14.20%
+
+Zusammenfassung aller Strategien:
+ML-Strategie: -74.67%
+BTC DCA: -44.10%
+Zufallsstrategie: -65.20%
+MSCI World B&H: -14.20%
+
+BTC Buy & Hold Rendite: -74.41%",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"*In abwärtstrend Risiko, PPoLstm 10/ only universal btc timeframe same features",100 epis,200 epis,,400 epis,,1000 epis,,,,,,,,,,,,,,,,,,,,,,
+"Der Trainingszeitraum von 01.09.2017 bis 10.11.2021
+Der Testzeitraum von 10.11.2021 bis 23.11.2022Datensatz-Splits:
+Gesamter Datensatz: 2,614 Samples
+Trainingsdaten: 2,091 Samples (80.0%)
+Testdaten: 523 Samples (20.0%)","Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: -65.23%
+  Standardabweichung: 14.43%
+  Min: -182.51%
+  Max: -26.18%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -74.99%
+  Standardabweichung: 0.00%
+  Min: -74.99%
+  Max: -74.99%
+
+Random Strategy:
+  Durchschnittliche Rendite: -20.86%
+  Standardabweichung: 19.19%
+  Min: -79.95%
+  Max: 30.83%","AI Model:
+  Durchschnittliche Rendite: -62.10%
+  Standardabweichung: 14.76%
+  Min: -74.38%
+  Max: 39.40%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -74.99%
+  Standardabweichung: 0.00%
+  Min: -74.99%
+  Max: -74.99%
+
+Random Strategy:
+  Durchschnittliche Rendite: -21.91%
+  Standardabweichung: 17.30%
+  Min: -78.41%
+  Max: 53.24%",,"AI Model:
+  Durchschnittliche Rendite: -62.45%
+  Standardabweichung: 13.00%
+  Min: -74.51%
+  Max: 50.72%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -74.99%
+  Standardabweichung: 0.00%
+  Min: -74.99%
+  Max: -74.99%
+
+Random Strategy:
+  Durchschnittliche Rendite: -21.75%
+  Standardabweichung: 17.70%
+  Min: -85.00%
+  Max: 21.58%",,"AI Model:
+  Durchschnittliche Rendite: -61.94%
+  Standardabweichung: 13.01%
+  Min: -73.64%
+  Max: 33.43%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -74.99%
+  Standardabweichung: 0.00%
+  Min: -74.99%
+  Max: -74.99%
+
+Random Strategy:
+  Durchschnittliche Rendite: -23.04%
+  Standardabweichung: 17.82%
+  Min: -84.26%
+  Max: 26.22%",,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"*In abwärtstrend Risiko, mit Sentiment, PPoLstm 10/ only universal btc timeframe same features",100 epis,200 epis,,400 epis,,1000 epis ,,,,,,,,,,,,,,,,,,,,,,
+"Der Trainingszeitraum von 01.09.2017 bis 10.11.2021
+Der Testzeitraum von 10.11.2021 bis 23.11.2022Datensatz-Splits:
+Gesamter Datensatz: 2,614 Samples
+Trainingsdaten: 2,091 Samples (80.0%)
+Testdaten: 523 Samples (20.0%)","AI Model:
+  Durchschnittliche Rendite: -62.30%
+  Standardabweichung: 12.47%
+  Min: -73.78%
+  Max: 28.79%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -74.99%
+  Standardabweichung: 0.00%
+  Min: -74.99%
+  Max: -74.99%","AI Model:
+  Durchschnittliche Rendite: -61.45%
+  Standardabweichung: 14.17%
+  Min: -74.62%
+  Max: 17.09%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -74.99%
+  Standardabweichung: 0.00%
+  Min: -74.99%
+  Max: -74.99%
+
+Random Strategy:
+  Durchschnittliche Rendite: -24.26%
+  Standardabweichung: 18.94%
+  Min: -84.26%
+  Max: 18.95%",,"AI Model:
+  Durchschnittliche Rendite: -62.95%
+  Standardabweichung: 9.39%
+  Min: -73.26%
+  Max: -14.08%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -74.99%
+  Standardabweichung: 0.00%
+  Min: -74.99%
+  Max: -74.99%
+
+Random Strategy:
+  Durchschnittliche Rendite: -22.37%
+  Standardabweichung: 18.03%
+  Min: -77.82%
+  Max: 16.43%",,"AI Model:
+  Durchschnittliche Rendite: -63.02%
+  Standardabweichung: 9.38%
+  Min: -74.13%
+  Max: 3.70%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -74.99%
+  Standardabweichung: 0.00%
+  Min: -74.99%
+  Max: -74.99%
+
+Random Strategy:
+  Durchschnittliche Rendite: -19.77%
+  Standardabweichung: 16.92%
+  Min: -77.09%
+  Max: 20.77%",,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"*In abwärtstrend Risiko, Ai4Finanane, 4Ppo Lstm Reward, universal btc timeframe  same features",1 epis,10 epis,,100 epis,200 epis,,400 epis,,800 epis,,,,,,,,,,,,,,,,,,,
+"Der Trainingszeitraum von 01.09.2017 bis 10.11.2021
+Der Testzeitraum von 10.11.2021 bis 23.11.2022","Initiales Investment: $10,000.00
+Finales Portfolio: $10,364.33
+Gesamtrendite: 3.64%
+Anzahl der Trades: 1082","Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%
+Anzahl der Trades: 1082",,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%
+Anzahl der Trades: 1082","Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%
+Anzahl der Trades: 1082",,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%
+Anzahl der Trades: 1082",,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,364.33
+Gesamtrendite: 3.64%
+Anzahl der Trades: 1082",,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"*In abwärtstrend Risiko, mit Sentiment, Ai4Finanane, 4Ppo Lstm Reward, universal btc timeframe  same features",1 epi,10 epis,,100 epis,,200 epis,,,1000 epis,,,,,,,,,,,,,,,,,,,
+,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,364.33
+Gesamtrendite: 3.64%","Initiales Investment: $10,000.00
+Finales Portfolio: $10,364.33
+Gesamtrendite: 3.64%
+Anzahl der Trades: 1082",,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%
+Anzahl der Trades: 1082",,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,364.33
+Gesamtrendite: 3.64%
+Anzahl der Trades: 1082",,,"Initiales Investment: $10,000.00
+Finales Portfolio: $10,000.00
+Gesamtrendite: 0.00%
+Anzahl der Trades: 1082",,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"*In abwärtstrend Risiko, Ppo Lstm 10 mit multi Data",,,100 epis,,200 epis,,400 epis,,,800 epis,,,1000 epis,,,,,,,,,,,,,,,
+"start_date = '2017-09-01'
+train_end_date = '2021-11-10'
+test_end_date = '2022-11-23'",,,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: -57.89%
+  Standardabweichung: 28.09%
+  Min: -204.22%
+  Max: -0.16%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -24.65%
+  Standardabweichung: 0.00%
+  Min: -24.65%
+  Max: -24.65%
+
+Random Strategy:
+  Durchschnittliche Rendite: -22.17%
+  Standardabweichung: 20.54%
+  Min: -70.69%
+  Max: 24.09%",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: -55.90%
+  Standardabweichung: 25.91%
+  Min: -186.01%
+  Max: 30.13%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -24.65%
+  Standardabweichung: 0.00%
+  Min: -24.65%
+  Max: -24.65%
+
+Random Strategy:
+  Durchschnittliche Rendite: -21.45%
+  Standardabweichung: 23.54%
+  Min: -87.80%
+  Max: 41.60%",,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: -58.28%
+  Standardabweichung: 21.26%
+  Min: -135.19%
+  Max: 28.19%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -24.65%
+  Standardabweichung: 0.00%
+  Min: -24.65%
+  Max: -24.65%
+
+Random Strategy:
+  Durchschnittliche Rendite: -18.86%
+  Standardabweichung: 24.05%
+  Min: -84.71%
+  Max: 45.98%
+",,,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: -56.56%
+  Standardabweichung: 24.67%
+  Min: -152.36%
+  Max: 17.50%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -24.65%
+  Standardabweichung: 0.00%
+  Min: -24.65%
+  Max: -24.65%
+
+Random Strategy:
+  Durchschnittliche Rendite: -21.65%
+  Standardabweichung: 21.40%
+  Min: -80.31%
+  Max: 26.03%",,,"Teststatistiken nach 200 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: -62.33%
+  Standardabweichung: 15.08%
+  Min: -74.17%
+  Max: 40.67%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -74.99%
+  Standardabweichung: 0.00%
+  Min: -74.99%
+  Max: -74.99%
+
+Random Strategy:
+  Durchschnittliche Rendite: -20.54%
+  Standardabweichung: 19.45%
+  Min: -88.35%
+  Max: 31.22%",,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"*In abwärtstrend Risiko, Ppo Lstm 10 mit multi Data",,,,100 epis,,,,,,800 epis,,,,,,,,,,,,,,,,,,
+"Trainingsdaten:
+Start: 2000-03-01 00:00:00
+Ende: 2021-11-10 00:00:00
+Länge: 7925 Datenpunkte/Tage)
+
+Testdaten:
+Start: 2021-11-10 00:00:00
+Ende: 2022-11-23 00:00:00
+Länge: 379 Datenpunkte/Tage)",,,,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: -56.62%
+  Standardabweichung: 27.77%
+  Min: -176.55%
+  Max: -1.16%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -24.65%
+  Standardabweichung: 0.00%
+  Min: -24.65%
+  Max: -24.65%
+
+Random Strategy:
+  Durchschnittliche Rendite: -18.30%
+  Standardabweichung: 23.35%
+  Min: -86.39%
+  Max: 36.58%",,,,,,"Teststatistiken nach 100 Durchläufen:
+AI Model:
+  Durchschnittliche Rendite: -54.55%
+  Standardabweichung: 31.97%
+  Min: -175.90%
+  Max: 31.85%
+
+Buy and Hold:
+  Durchschnittliche Rendite: -24.65%
+  Standardabweichung: 0.00%
+  Min: -24.65%
+  Max: -24.65%
+
+Random Strategy:
+  Durchschnittliche Rendite: -18.64%
+  Standardabweichung: 21.56%
+  Min: -83.57%
+  Max: 20.57%",,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Ai4Finance Ensemble Strategie PPO, SAC, TD3",,,,,,,,,,,,,,,,,,,,,,,,,,,,
